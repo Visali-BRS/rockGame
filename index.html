@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <link href="assets/style.css" type="text/css" rel="stylesheet" />
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <h1>Welcome to Rock, Paper, Scissors!</h1>
+
+    <section class="username">
+      <label for="username">Gamer Name:  </label>
+      <input type="text" id="user" name="username" placeholder="Enter Your Name" />
+      <button id="submit">Submit</button>
+      <h2><span id="currentUser"></span>Choose Your Weapon</h2>
+    </section>
+
+    <section class="buttons-article">
+      <button id="rock" class="choice"></button>
+      <button id="paper" class="choice"></button>
+      <button id="scissors" class="choice"></button>
+    </section>
+
+    <article class="game-state">
+      <p><span id="userChoice">User</span>'s Choice  : <span id="playerchoice"></span></p>
+      <p>Computer Choice   : <span id="computerMove"></span></p>
+      <p class="result">Result: <span id="results"></span></p>
+    </article>
+
+    <section class="scoreboard">
+      <h3>Scoreboard</h3>
+      <p>Wins: <span id="wins">0</span></p>
+      <p>Losses: <span id="losses">0</span></p>
+      <p>Draws: <span id="draws">0</span></p>
+    </section>
+    
+    <button id="playAgain" style="display:none; margin-top: 20px;">Play Again</button>
+
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
